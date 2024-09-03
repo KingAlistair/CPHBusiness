@@ -1,5 +1,5 @@
 User guide:
 
-1. cd to Ecercises folder 
+1. change directory to Exercises folder 
 2. run "node exercise.js"
-3. See the magic happen
+3. Have fun!
