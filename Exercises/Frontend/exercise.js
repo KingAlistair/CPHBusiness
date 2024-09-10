@@ -10,6 +10,8 @@ const duckInput = document.getElementById('duckInput')
 const questionsArray = [];
 let id = 1;
 
+const jokeButton = document.getElementById('jokeButton')
+const answer = document.getElementById('answer')
 
 window.addEventListener('load', function() {
     const userName = prompt("What is your name?");
@@ -69,3 +71,23 @@ duckImage.addEventListener('mouseleave', function () {
     easterEgg.className = 'easterEggHidden'
 })
 
+
+jokeButton.addEventListener('click', ()=>{
+
+fetch('https://v2.jokeapi.dev/joke/Programming?type=single')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        answer.innerText = data.joke;
+         
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+
+
+})
