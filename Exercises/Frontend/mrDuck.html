@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="exercise.css">
-    <title>Document</title>
-
+    <title>Mr. Duck</title>
+    <button class="userButton" onclick="window.location.href='user.html'" >Create user</button>
 </head>
 
 <body>
@@ -16,20 +16,25 @@
         <div class="hidden" class="duckMessage" id='hiddenMessage'>Hidden message</div>
     </div>
 
-    <h2>Exercise 2</h2>
+
+        <h2>Exercise 2</h2>
+    
     <div class="customDiv">
         <input class="input" id="duckInput" type="text" id="duckInput">
         <button id="duckButton">Ask the duck</button>
-        <img class="image" id="duckImage" src="./images/rubber_duck.jpg">
+
+        <img class="image" title="Hello" id="duckImage" src="./images/rubber_duck.jpg">
+    
+        <p class="greeting" id="greeting"></p>
         <div class="hidden" id="duckMessage">Good luck with that!</div>
         <img class="easterEggHidden" style="display: hidden;" id="easterEgg" src="./images/egg.png">
-
     </div>
+
     <div class="customDiv">
         <h5>Questions:</h5>
         <ul id="questionList"></ul>
     </div>
-    <script src="exercise.js"></script>
+    <script type="module" src="exercise.js"></script>
 </body>
 
 </html>

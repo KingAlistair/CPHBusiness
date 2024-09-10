@@ -11,6 +11,27 @@ const questionsArray = [];
 let id = 1;
 
 
+window.addEventListener('load', function() {
+    const userName = prompt("What is your name?");
+
+    const greeting = `Hello, ${userName}!`;
+
+    document.getElementById('greeting').textContent = greeting;
+});
+
+const formattedDate = () => {
+    const date = new Date();
+    const day = date.getDate(); 
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    const hours = date.getHours(); 
+    const minutes = date.getMinutes();
+
+    return `${day}/${month}/${year}, ${hours}:${minutes}`;
+}
+
+duckImage.title = formattedDate();
+
 button.addEventListener('mouseenter', function () {
     hiddenMessage.className = 'show';
 });
@@ -28,12 +49,8 @@ duckButton.addEventListener('click', function () {
     console.log(duckInput.value)
     questionsList.appendChild(question);
 
-
-
     localStorage.setItem(id, duckInput.value);
     id++;
-
-
 
     setTimeout(() => {
         duckMessage.className = 'hidden';

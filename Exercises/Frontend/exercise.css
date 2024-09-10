@@ -4,8 +4,13 @@ h2 {
 
 
 body {
-    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
 
 .hidden {
     display: none;
@@ -27,6 +32,16 @@ body {
 .duckMessage {
     font-weight: bold;
     border: 1px solid gray;
+}
+
+.userButton {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.greeting {
+    margin-right: 1rem;
 }
 
 .customDiv {
@@ -57,3 +72,35 @@ body {
 .questionBox {
     margin-left: 10rem;
 }
+
+button {
+
+    padding: 0.5rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+input {
+    padding: 0.5rem;
+    border: 2px solid #a9a5a5;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+    input:focus {
+        border-color: #007BFF;
+        outline: none;
+    }
