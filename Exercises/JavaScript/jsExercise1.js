@@ -1,7 +1,8 @@
-import { Cat } from './cat.js';
-import { Car } from './car.js';
-import { topicSeperator } from './topicSeperator.js';
+import { Cat } from '../cat.js';
+import { Car } from '../car.js';
+import { topicSeperator } from '../topicSeperator.js';
 
+topicSeperator('1. Lesson Exercises');
 topicSeperator('Functions and objects');
 
 function getName(firstName, lastName) {
@@ -101,3 +102,5 @@ function addGrade(student, grade) {
 };
 
 console.log(addGrade(student, 12));
+
+

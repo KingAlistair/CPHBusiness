@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .flex {
+            display: flex;
+            gap: 2rem;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        input {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 200px;
+            transition: border-color 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <h2 id="answer">Guess my number! (1-100)<h2>
+                <button class="hidden" id="again">Again?</button>
+
+
+    </div>
+    <input id="input">
+    <button id="button">Submit</button>
+
+
+
+    <script type="module" src="higherOrLower.js"></script>
+</body>
+
+</html>
