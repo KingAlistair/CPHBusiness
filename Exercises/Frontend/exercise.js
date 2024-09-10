@@ -74,7 +74,7 @@ duckImage.addEventListener('mouseleave', function () {
 
 jokeButton.addEventListener('click', ()=>{
 
-fetch('https://v2.jokeapi.dev/joke/Programming?type=single')
+fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single')
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
