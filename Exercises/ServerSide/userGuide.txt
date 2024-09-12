@@ -1,0 +1,13 @@
+User guide:
+
+Lesson 1 exercises:
+ 
+1. run "node exercise1.js"
+2. Enjoy!
+
+Lesson 2 exercises (bookPage.html, guessTheNumber.html):
+
+1. npm i live-server
+2. run "live-server"
+2. open bookPage.html & guessTheNumber.html file
+4. Have fun!

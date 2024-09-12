@@ -1,6 +1,7 @@
-import { Cat } from '../cat.js';
-import { Car } from '../car.js';
-import { topicSeperator } from '../topicSeperator.js';
+import { Cat } from './Classes/cat.js';
+import { Car } from './Classes/car.js';
+
+import { topicSeperator } from './topicSeperator.js';
 
 topicSeperator('1. Lesson Exercises');
 topicSeperator('Functions and objects');

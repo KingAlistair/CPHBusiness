@@ -32,7 +32,6 @@ const formattedDate = () => {
     return `${day}/${month}/${year}, ${hours}:${minutes}`;
 }
 
-duckImage.title = formattedDate();
 
 button.addEventListener('mouseenter', function () {
     hiddenMessage.className = 'show';
@@ -49,6 +48,7 @@ duckButton.addEventListener('click', function () {
     const question = document.createElement('li');
     question.textContent = duckInput.value;
     console.log(duckInput.value)
+    question.title = formattedDate();
     questionsList.appendChild(question);
 
     localStorage.setItem(id, duckInput.value);

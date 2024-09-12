@@ -6,7 +6,7 @@ const again = document.getElementById('again');
 
 
 let randomNumber = Math.floor(Math.random() * 101);
-console.log(randomNumber)
+console.log('My secret number: ' + randomNumber)
 
 button.addEventListener('click', () => {
 
@@ -18,18 +18,18 @@ button.addEventListener('click', () => {
     guess = parseInt(input.value);
 
     if (randomNumber === guess) {
-        answer.innerText = 'You got the number!'
+        answer.innerText = 'Yes, my number was ' + guess + '!';
         again.className = 'show';
     } else if (randomNumber > guess) {
-        answer.innerText = 'My number is higher!'
+        answer.innerText = 'My number is higher than ' + guess + '.';
     } else if (randomNumber < guess) {
-        answer.innerText = 'My number is lower!'
+        answer.innerText = 'My number is lower than ' + + guess + '.';
     }
 })
 
 again.addEventListener('click', () => {
     randomNumber = Math.floor(Math.random() * 101);
     again.className = 'hidden';
-    console.log(randomNumber);
+    console.log('My secret number: ' + randomNumber)
     input.value = '';
 });

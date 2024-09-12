@@ -1,5 +1,8 @@
 import { topicSeperator } from "./topicSeperator.js";
 
+
+//Use live-server to see the console logs in browser
+
 topicSeperator('2. Lesson Exercises');
 
 topicSeperator('Loops & Arrays')
@@ -26,10 +29,11 @@ const books = [
   books.forEach(element => {
     const book = document.createElement('li')
     book.innerText = element.title + ' ' + element.author;
-    console.log(book + '1')
 
     bookList.appendChild(book);
   })
+
+  console.log('<---- Look left');
 
   topicSeperator('IF exercises');
 

@@ -1,0 +1,6 @@
+ClientSide exercises:
+
+1. npm i live-server
+2. run "live-server"
+2. open mrDuck.html & /web2024ifelseloop/index.html  file
+4. Have fun!
